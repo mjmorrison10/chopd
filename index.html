@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOP'D La Mirada | Fresh Chopped Salads & Bowls</title>
+    <meta name="description" content="CHOP'D in La Mirada, CA. Fresh chopped salads, protein bowls, wraps, acai bowls & smoothies. FREE upgrade to large on your first order. Call (562) 448-0038.">
+    <meta name="keywords" content="chopped salad La Mirada, protein bowls, acai bowls, smoothies, healthy food La Mirada, build your own salad, fresh bowls">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:5624480038">(562) 448-0038</a>
+                </span>
+                <span class="top-bar-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    12754 La Mirada Blvd, La Mirada, CA
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item">Mon-Sat 10:30AM-9PM, Sun 11AM-8PM</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">CH</span>
+                <div class="logo-text">
+                    <span class="logo-name">CHOP'D</span>
+                    <span class="logo-tagline">Fresh Chopped Salads & Bowls</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#menu" data-section="menu">Menu</a></li>
+                <li><a href="#why-us" data-section="why-us">Why Us</a></li>
+                <li><a href="#reviews" data-section="reviews">Reviews</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#contact" class="nav-cta" data-section="contact">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-badge">FREE Upgrade to Large on Your First Order</div>
+            <h1>Fresh Chopped.<br><span class="highlight">Perfectly Bold.</span></h1>
+            <p class="hero-sub">La Mirada's go-to spot for chopped salads, protein bowls, wraps, and smoothies. Everything made fresh to order with the best ingredients. Eat clean, feel amazing, and never sacrifice flavor.</p>
+            <div class="hero-ctas">
+                <a href="tel:5624480038" class="btn btn-primary btn-lg btn-pulse">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call (562) 448-0038
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Order Online</a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <div class="trust-score">4.6</div>
+                    <div class="trust-label">Yelp Rating<br><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <div class="trust-score">100%</div>
+                    <div class="trust-label">Fresh Made<br>To Order</div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <div class="trust-score">30+</div>
+                    <div class="trust-label">Ingredients<br>To Choose</div>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <div class="trust-score">FREE</div>
+                    <div class="trust-label">Large Upgrade<br>First Order</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="urgency-banner" id="urgency-banner">
+        <div class="container">
+            <div class="urgency-content">
+                <div class="urgency-text">
+                    <span class="urgency-label">FIRST ORDER SPECIAL</span>
+                    <strong>FREE Upgrade</strong> to large on your first order. Get more fresh food for the same price. Order now!
+                </div>
+                <a href="tel:5624480038" class="btn btn-white">Claim Offer</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Serve</span>
+                <h2>Fresh, Bold &<br>Made To Order</h2>
+                <p>From signature chopped salads to protein-packed bowls and refreshing smoothies, everything at CHOP'D is made fresh when you order. Real food, real flavor, real fast.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    </div>
+                    <h3>Signature Chopped Salads</h3>
+                    <p>Our signature salads are chopped fresh and tossed in house-made dressings. From the Classic Cobb to the Thai Peanut, each one is a flavor explosion. Not your average salad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="8" rx="8" ry="4"/><path d="M4 8v4c0 2.2 3.6 4 8 4s8-1.8 8-4V8"/><path d="M4 12v4c0 2.2 3.6 4 8 4s8-1.8 8-4v-4"/></svg>
+                    </div>
+                    <h3>Protein Bowls</h3>
+                    <p>Loaded with grilled chicken, steak, salmon, or plant-based proteins. Served over rice, quinoa, or mixed greens. Fuel your body with meals that work as hard as you do.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+                    </div>
+                    <h3>Wraps & Pitas</h3>
+                    <p>All the fresh ingredients of our salads, wrapped up for easy eating. Grilled chicken wrap, falafel pita, or create your own. Perfect for lunch on the go.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+                    </div>
+                    <h3>Acai Bowls</h3>
+                    <p>Thick, creamy acai blended with fruits and topped with granola, fresh berries, coconut, honey, and superfoods. The ultimate healthy treat that tastes like dessert.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 110 8h-1"/><path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/></svg>
+                    </div>
+                    <h3>Fresh Smoothies</h3>
+                    <p>Blended to order with real fruits, vegetables, and superfoods. Green detox, berry blast, tropical mango, and protein power. Refreshing and nutritious in every sip.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
+                    </div>
+                    <h3>Build-Your-Own Salad</h3>
+                    <p>Choose your base, proteins, toppings, and dressing from over 30 fresh ingredients. Make it exactly how you like it. Your salad, your rules, our fresh ingredients.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Kids Meals</h3>
+                    <p>Healthy meals kids actually want to eat. Smaller portions, kid-friendly flavors, and nutritious ingredients. Make healthy eating fun for the whole family.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V4a2 2 0 012-2h8a2 2 0 012 2v3"/></svg>
+                    </div>
+                    <h3>Catering Platters</h3>
+                    <p>Feed your team or party with our catering platters. Salad bars, wrap platters, and acai bowl setups. Fresh, healthy catering that impresses every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-tag">What Makes Us Special</span>
+                    <h2>Not Just Salads.<br>Fresh Food That Slaps.</h2>
+                    <p>CHOP'D is not your typical salad shop. We are about bold flavors, generous portions, and real ingredients that make healthy eating something you actually look forward to. No boring salads here.</p>
+                    <div class="why-features">
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>Chopped Fresh, Not Pre-Made</strong>
+                                <p>Your salad is chopped and assembled right when you order. Nothing sits in bins waiting. Every bite is as fresh as it gets. That is the CHOP'D difference.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>House-Made Dressings</strong>
+                                <p>Our dressings are made fresh in-house every day. No bottled stuff. From creamy avocado to zesty citrus vinaigrette, each dressing elevates your meal to the next level.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>Something For Everyone</strong>
+                                <p>Salads, bowls, wraps, acai, smoothies, and kids meals. Whether you are keto, vegan, or just hungry, we have options that fit your lifestyle and taste incredible.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>Fast, Friendly Service</strong>
+                                <p>Line moves quick, food comes out fast, and our team always greets you with a smile. In and out in minutes, or stay and enjoy. Your choice, your pace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual">
+                    <div class="stats-card">
+                        <div class="stats-number" data-count="30">30+</div>
+                        <div class="stats-label">Fresh Ingredients</div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-number" data-count="15">15+</div>
+                        <div class="stats-label">Signature Salads</div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-number" data-count="8">8</div>
+                        <div class="stats-label">Smoothie Flavors</div>
+                        <div class="stats-divider"></div>
+                        <div class="stats-number" data-count="0" data-suffix="100%">100%</div>
+                        <div class="stats-label">Made To Order</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Customer Reviews</span>
+                <h2>What Our Regulars Say.<br>Fresh Food, Real Reviews.</h2>
+                <p>See why La Mirada keeps coming back to CHOP'D for their daily dose of fresh.</p>
+            </div>
+            <div class="reviews-grid" id="reviewsGrid">
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Finally a salad place that actually fills you up! The portions are huge and the flavors are amazing. The Southwest Chop is my go-to. The chicken is always perfectly grilled and the dressing is addictive."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Y</div>
+                        <div>
+                            <strong>Yelp Verified Review</strong>
+                            <span>5-Star Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"The acai bowls here are the best I have had in the area. Super thick, tons of toppings, and the granola is crunchy and delicious. My kids love the smoothies too. A healthy spot the whole family can agree on."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Y</div>
+                        <div>
+                            <strong>Yelp Verified Review</strong>
+                            <span>Amanda R., La Mirada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"I eat here 3 times a week. The protein bowls keep me fueled through long work days. The steak bowl with quinoa is phenomenal. Fast, fresh, and the staff is always super friendly."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">V</div>
+                        <div>
+                            <strong>Verified Customer Review</strong>
+                            <span>Jason M., Whittier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"I love that I can build my own salad with exactly what I want. The ingredients are always fresh and the dressing selection is great. The chipotle ranch is a must-try. Way better than chain salad places."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Y</div>
+                        <div>
+                            <strong>Yelp Verified Review</strong>
+                            <span>Rachel K., Buena Park</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Ordered catering for our office lunch and everyone was impressed. The salad bar setup was beautiful and the wraps were a hit. Professional delivery and great value. CHOP'D is now our go-to for team lunches."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">V</div>
+                        <div>
+                            <strong>Verified Customer Review</strong>
+                            <span>Tony S., La Mirada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"The wraps are so good I forgot I was eating healthy. The falafel pita is incredible with the tzatziki sauce. Fresh, flavorful, and filling. This place has ruined other salad spots for me."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">Y</div>
+                        <div>
+                            <strong>Yelp Verified Review</strong>
+                            <span>Megan L., Norwalk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-cta">
+                <p>Join the fresh food revolution. Taste the CHOP'D difference today.</p>
+                <a href="tel:5624480038" class="btn btn-primary">Call (562) 448-0038</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About CHOP'D</span>
+                    <h2>La Mirada's Fresh Food<br>Destination Since Day One</h2>
+                    <p>CHOP'D was born from a simple idea: healthy food should taste incredible, fill you up, and not cost a fortune. We got tired of overpriced salads with skimpy portions and bland flavors, so we built the salad shop we always wished existed.</p>
+                    <p>Every salad is chopped fresh when you order. Every bowl is built with care. Every smoothie is blended with real fruit. We believe that eating well should never feel like a compromise, and one bite of our food proves it.</p>
+                    <p>Whether you are a salad aficionado, a protein bowl enthusiast, or just someone who wants a fresh meal that actually tastes good, CHOP'D is your spot. Come see why La Mirada keeps coming back.</p>
+                    <div class="trust-badges">
+                        <span class="trust-badge">Fresh Chopped</span>
+                        <span class="trust-badge">House Dressings</span>
+                        <span class="trust-badge">Made To Order</span>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <h4>Chopped Fresh Daily</h4>
+                        <p>Our ingredients are prepped fresh every single morning. No pre-chopped bags, no sitting around. When you order, we chop, assemble, and serve. Peak freshness, every time.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>House-Made Everything</h4>
+                        <p>Our dressings, marinades, and sauces are made in-house from scratch. No corporate recipes here. Just real food made by real people who care about flavor and quality.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Catering That Impresses</h4>
+                        <p>From office lunches to private events, our catering platters make healthy eating easy and delicious. Salad bars, wrap stations, and acai setups that your guests will love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hungry For Something Fresh?<br>Your Next Meal Is Waiting.</h2>
+                <p>Stop settling for boring food. Call us or stop by for the freshest, boldest chopped salads and bowls in La Mirada. Your taste buds will thank you.</p>
+                <div class="cta-buttons">
+                    <a href="tel:5624480038" class="btn btn-primary btn-lg btn-pulse">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Order Now: (562) 448-0038
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">View Full Menu</a>
+                </div>
+                <p class="cta-note">First order gets a <strong>FREE upgrade to large</strong>!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Order Your Fresh Meal</h2>
+                    <p>Call ahead for faster pickup, dine in with us, or order catering for your next event. Fresh food is just a call or click away.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:5624480038">(562) 448-0038</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div>
+                                <strong>Address</strong>
+                                <span>12754 La Mirada Blvd<br>La Mirada, CA 90638</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Sat: 10:30 AM - 9:00 PM<br>Sun: 11:00 AM - 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Place an Order</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Alex Johnson">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(562) 555-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="alex@email.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderType">Order Type</label>
+                                <select id="orderType" name="orderType">
+                                    <option value="">Select type...</option>
+                                    <option value="dine-in">Dine-In</option>
+                                    <option value="takeout">Takeout</option>
+                                    <option value="catering">Catering</option>
+                                    <option value="delivery">Delivery</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="partySize">Party Size</label>
+                                <input type="text" id="partySize" name="partySize" placeholder="e.g. 1, 4, 10+...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Order Details</label>
+                            <textarea id="message" name="message" rows="3" placeholder="What would you like to order?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Order</button>
+                        <p class="form-note">We will confirm your order within 10 minutes.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5!2d-118.0120!3d33.9170!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d08e8e8e8e8%3A0x123456789!2s12754+La+Mirada+Blvd%2C+La+Mirada%2C+CA+90638!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="350" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">CH</span>
+                        <div class="logo-text">
+                            <span class="logo-name">CHOP'D</span>
+                            <span class="logo-tagline">Fresh Chopped Salads & Bowls</span>
+                        </div>
+                    </div>
+                    <p>La Mirada's destination for fresh chopped salads, protein bowls, wraps, and smoothies. Eat fresh, feel amazing.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Items</h4>
+                    <ul>
+                        <li><a href="#menu">Chopped Salads</a></li>
+                        <li><a href="#menu">Protein Bowls</a></li>
+                        <li><a href="#menu">Wraps & Pitas</a></li>
+                        <li><a href="#menu">Acai Bowls</a></li>
+                        <li><a href="#menu">Smoothies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><a href="tel:5624480038">(562) 448-0038</a></p>
+                    <p>12754 La Mirada Blvd<br>La Mirada, CA 90638</p>
+                    <p>Mon-Sat: 10:30AM - 9PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CHOP'D. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-cta" id="mobileCta">
+        <a href="tel:5624480038" class="btn btn-primary btn-full">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Order Now: (562) 448-0038
+        </a>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
