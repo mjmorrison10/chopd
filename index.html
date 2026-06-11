@@ -3,338 +3,508 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHOP'D La Mirada | Fresh Chopped Salads & Bowls</title>
-    <meta name="description" content="CHOP'D in La Mirada, CA. Fresh chopped salads, protein bowls, wraps, acai bowls & smoothies. FREE upgrade to large on your first order. Call (562) 448-0038.">
-    <meta name="keywords" content="chopped salad La Mirada, protein bowls, acai bowls, smoothies, healthy food La Mirada, build your own salad, fresh bowls">
+    <title>CHOP'D La Mirada | Fuel Your Grind | Fresh Chopped Salads & Protein Bowls | (562) 448-0038</title>
+    <meta name="description" content="CHOP'D La Mirada — Fresh chopped salads, protein bowls, wraps, acai bowls & smoothies. 30+ ingredients. Macro-friendly meals. FREE large upgrade on first order. Call (562) 448-0038.">
+    <meta name="keywords" content="chopped salad La Mirada, protein bowls, acai bowls, smoothies, healthy food La Mirada, build your own salad, macro-friendly, meal prep">
+    <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='12' fill='%2322c55e'%3ECH%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CHOP'D — Fuel Your Grind | Fresh Salads & Protein Bowls in La Mirada">
+    <meta property="og:description" content="La Mirada's go-to for chopped salads, protein bowls, acai & smoothies. 30+ fresh ingredients. Macro-friendly. FREE large upgrade first order.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://chopdlamirada.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="CHOP'D La Mirada">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "CHOP'D",
+        "telephone": "+1-562-448-0038",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12754 La Mirada Blvd",
+            "addressLocality": "La Mirada",
+            "addressRegion": "CA",
+            "postalCode": "90638",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:30",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "11:00",
+                "closes": "20:00"
+            }
+        ],
+        "servesCuisine": ["Salads", "Protein Bowls", "Smoothies", "Acai Bowls", "Healthy Food"],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "200"
+        }
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="top-bar-left">
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    <a href="tel:5624480038">(562) 448-0038</a>
-                </span>
-                <span class="top-bar-item">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    12754 La Mirada Blvd, La Mirada, CA
-                </span>
-            </div>
-            <div class="top-bar-right">
-                <span class="top-bar-item">Mon-Sat 10:30AM-9PM, Sun 11AM-8PM</span>
-            </div>
-        </div>
-    </div>
-
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
-            <a href="#" class="logo">
-                <span class="logo-icon">CH</span>
-                <div class="logo-text">
-                    <span class="logo-name">CHOP'D</span>
-                    <span class="logo-tagline">Fresh Chopped Salads & Bowls</span>
-                </div>
+            <a href="#" class="logo" aria-label="CHOP'D Home">
+                <span class="logo-mark">CH</span>
+                <span class="logo-name">CHOP'D</span>
             </a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#build-your-bowl">Build Your Bowl</a></li>
+                <li><a href="#macros">Macros</a></li>
+                <li><a href="#fuel">Fuel Up</a></li>
+                <li><a href="#athletes">Athletes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Order Now</a></li>
+            </ul>
+            <div class="nav-status">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Checking...</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#menu" data-section="menu">Menu</a></li>
-                <li><a href="#why-us" data-section="why-us">Why Us</a></li>
-                <li><a href="#reviews" data-section="reviews">Reviews</a></li>
-                <li><a href="#about" data-section="about">About</a></li>
-                <li><a href="#contact" class="nav-cta" data-section="contact">Order Now</a></li>
-            </ul>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#build-your-bowl">Build Your Bowl</a>
+        <a href="#macros">Macros</a>
+        <a href="#fuel">Fuel Up</a>
+        <a href="#athletes">Athletes</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="mobile-menu-cta">Order Now — (562) 448-0038</a>
+    </div>
+
+    <!-- 1. ENERGY BURST HERO -->
     <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-particles" id="heroParticles"></div>
-            <div class="hero-badge">FREE Upgrade to Large on Your First Order</div>
-            <h1>Fresh Chopped.<br><span class="highlight">Perfectly Bold.</span></h1>
-            <p class="hero-sub">La Mirada's go-to spot for chopped salads, protein bowls, wraps, and smoothies. Everything made fresh to order with the best ingredients. Eat clean, feel amazing, and never sacrifice flavor.</p>
-            <div class="hero-ctas">
-                <a href="tel:5624480038" class="btn btn-primary btn-lg btn-pulse">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    Call (562) 448-0038
-                </a>
-                <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">Order Online</a>
-            </div>
-            <div class="hero-trust">
-                <div class="trust-item">
-                    <div class="trust-score">4.6</div>
-                    <div class="trust-label">Yelp Rating<br><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+        <div class="hero-burst" aria-hidden="true"></div>
+        <div class="hero-grid-lines" aria-hidden="true"></div>
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <div class="hero-badge">&#9889; FREE Large Upgrade on Your First Order</div>
+                <h1 class="reveal stagger-1">
+                    Fuel Your<br>
+                    <span class="hero-gradient">Grind.</span>
+                </h1>
+                <p class="hero-sub reveal stagger-2">
+                    La Mirada's go-to spot for macro-friendly chopped salads, protein bowls, wraps, and smoothies. 30+ fresh ingredients, zero shortcuts. Every meal is made when you order. Real food for real results.
+                </p>
+                <div class="hero-actions reveal stagger-3">
+                    <a href="tel:5624480038" class="btn btn-neon btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call (562) 448-0038
+                    </a>
+                    <a href="#contact" class="btn btn-ghost btn-lg">Order Online</a>
                 </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">100%</div>
-                    <div class="trust-label">Fresh Made<br>To Order</div>
-                </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">30+</div>
-                    <div class="trust-label">Ingredients<br>To Choose</div>
-                </div>
-                <div class="trust-divider"></div>
-                <div class="trust-item">
-                    <div class="trust-score">FREE</div>
-                    <div class="trust-label">Large Upgrade<br>First Order</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="urgency-banner" id="urgency-banner">
-        <div class="container">
-            <div class="urgency-content">
-                <div class="urgency-text">
-                    <span class="urgency-label">FIRST ORDER SPECIAL</span>
-                    <strong>FREE Upgrade</strong> to large on your first order. Get more fresh food for the same price. Order now!
-                </div>
-                <a href="tel:5624480038" class="btn btn-white">Claim Offer</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="menu">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Serve</span>
-                <h2>Fresh, Bold &<br>Made To Order</h2>
-                <p>From signature chopped salads to protein-packed bowls and refreshing smoothies, everything at CHOP'D is made fresh when you order. Real food, real flavor, real fast.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                <div class="hero-stats reveal stagger-4">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">4.6</div>
+                        <div class="hero-stat-label">Yelp Rating</div>
                     </div>
-                    <h3>Signature Chopped Salads</h3>
-                    <p>Our signature salads are chopped fresh and tossed in house-made dressings. From the Classic Cobb to the Thai Peanut, each one is a flavor explosion. Not your average salad.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="8" rx="8" ry="4"/><path d="M4 8v4c0 2.2 3.6 4 8 4s8-1.8 8-4V8"/><path d="M4 12v4c0 2.2 3.6 4 8 4s8-1.8 8-4v-4"/></svg>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">30+</div>
+                        <div class="hero-stat-label">Ingredients</div>
                     </div>
-                    <h3>Protein Bowls</h3>
-                    <p>Loaded with grilled chicken, steak, salmon, or plant-based proteins. Served over rice, quinoa, or mixed greens. Fuel your body with meals that work as hard as you do.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">100%</div>
+                        <div class="hero-stat-label">Made To Order</div>
                     </div>
-                    <h3>Wraps & Pitas</h3>
-                    <p>All the fresh ingredients of our salads, wrapped up for easy eating. Grilled chicken wrap, falafel pita, or create your own. Perfect for lunch on the go.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
-                    </div>
-                    <h3>Acai Bowls</h3>
-                    <p>Thick, creamy acai blended with fruits and topped with granola, fresh berries, coconut, honey, and superfoods. The ultimate healthy treat that tastes like dessert.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 110 8h-1"/><path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/></svg>
-                    </div>
-                    <h3>Fresh Smoothies</h3>
-                    <p>Blended to order with real fruits, vegetables, and superfoods. Green detox, berry blast, tropical mango, and protein power. Refreshing and nutritious in every sip.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
-                    </div>
-                    <h3>Build-Your-Own Salad</h3>
-                    <p>Choose your base, proteins, toppings, and dressing from over 30 fresh ingredients. Make it exactly how you like it. Your salad, your rules, our fresh ingredients.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                    </div>
-                    <h3>Kids Meals</h3>
-                    <p>Healthy meals kids actually want to eat. Smaller portions, kid-friendly flavors, and nutritious ingredients. Make healthy eating fun for the whole family.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V4a2 2 0 012-2h8a2 2 0 012 2v3"/></svg>
-                    </div>
-                    <h3>Catering Platters</h3>
-                    <p>Feed your team or party with our catering platters. Salad bars, wrap platters, and acai bowl setups. Fresh, healthy catering that impresses every time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="why-us" id="why-us">
-        <div class="container">
-            <div class="why-us-grid">
-                <div class="why-us-content">
-                    <span class="section-tag">What Makes Us Special</span>
-                    <h2>Not Just Salads.<br>Fresh Food That Slaps.</h2>
-                    <p>CHOP'D is not your typical salad shop. We are about bold flavors, generous portions, and real ingredients that make healthy eating something you actually look forward to. No boring salads here.</p>
-                    <div class="why-features">
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Chopped Fresh, Not Pre-Made</strong>
-                                <p>Your salad is chopped and assembled right when you order. Nothing sits in bins waiting. Every bite is as fresh as it gets. That is the CHOP'D difference.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>House-Made Dressings</strong>
-                                <p>Our dressings are made fresh in-house every day. No bottled stuff. From creamy avocado to zesty citrus vinaigrette, each dressing elevates your meal to the next level.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Something For Everyone</strong>
-                                <p>Salads, bowls, wraps, acai, smoothies, and kids meals. Whether you are keto, vegan, or just hungry, we have options that fit your lifestyle and taste incredible.</p>
-                            </div>
-                        </div>
-                        <div class="why-feature">
-                            <div class="why-feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            </div>
-                            <div>
-                                <strong>Fast, Friendly Service</strong>
-                                <p>Line moves quick, food comes out fast, and our team always greets you with a smile. In and out in minutes, or stay and enjoy. Your choice, your pace.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="why-us-visual">
-                    <div class="stats-card">
-                        <div class="stats-number" data-count="30">30+</div>
-                        <div class="stats-label">Fresh Ingredients</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="15">15+</div>
-                        <div class="stats-label">Signature Salads</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="8">8</div>
-                        <div class="stats-label">Smoothie Flavors</div>
-                        <div class="stats-divider"></div>
-                        <div class="stats-number" data-count="0" data-suffix="100%">100%</div>
-                        <div class="stats-label">Made To Order</div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num">FREE</div>
+                        <div class="hero-stat-label">Large Upgrade</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials" id="reviews">
+    <!-- 2. URGENCY STRIP -->
+    <section class="urgency-strip" id="urgency">
+        <div class="container urgency-inner">
+            <span class="urgency-pulse"></span>
+            <span class="urgency-label">First Order Special</span>
+            <span class="urgency-text"><strong>FREE upgrade to LARGE</strong> on your first order. More fuel, same price.</span>
+            <a href="tel:5624480038" class="urgency-cta">Claim It</a>
+        </div>
+    </section>
+
+    <!-- 3. BUILD YOUR BOWL INTERACTIVE -->
+    <section class="build-section" id="build-your-bowl">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Customer Reviews</span>
-                <h2>What Our Regulars Say.<br>Fresh Food, Real Reviews.</h2>
-                <p>See why La Mirada keeps coming back to CHOP'D for their daily dose of fresh.</p>
+            <div class="section-header reveal">
+                <span class="section-tag">&#9889; Build Your Bowl</span>
+                <h2 class="section-heading">Your Rules.<br>Your Bowl.</h2>
+                <p class="section-sub">Choose your base, load your protein, pile on the toppings, and drizzle your dressing. 30+ fresh ingredients — infinite combinations.</p>
             </div>
-            <div class="reviews-grid" id="reviewsGrid">
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Finally a salad place that actually fills you up! The portions are huge and the flavors are amazing. The Southwest Chop is my go-to. The chicken is always perfectly grilled and the dressing is addictive."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>5-Star Review</span>
+            <div class="build-steps">
+                <div class="build-step reveal stagger-1">
+                    <div class="build-step-num">01</div>
+                    <div class="build-step-icon">&#127834;</div>
+                    <h3>Pick Your Base</h3>
+                    <div class="build-options">
+                        <span class="build-tag">Mixed Greens</span>
+                        <span class="build-tag">Spinach</span>
+                        <span class="build-tag">Quinoa</span>
+                        <span class="build-tag">Brown Rice</span>
+                        <span class="build-tag">Kale</span>
+                    </div>
+                </div>
+                <div class="build-step-arrow reveal" aria-hidden="true">&#8594;</div>
+                <div class="build-step reveal stagger-2">
+                    <div class="build-step-num">02</div>
+                    <div class="build-step-icon">&#127828;</div>
+                    <h3>Choose Protein</h3>
+                    <div class="build-options">
+                        <span class="build-tag">Grilled Chicken</span>
+                        <span class="build-tag">Steak</span>
+                        <span class="build-tag">Salmon</span>
+                        <span class="build-tag">Shrimp</span>
+                        <span class="build-tag">Falafel</span>
+                        <span class="build-tag">Tofu</span>
+                    </div>
+                </div>
+                <div class="build-step-arrow reveal" aria-hidden="true">&#8594;</div>
+                <div class="build-step reveal stagger-3">
+                    <div class="build-step-num">03</div>
+                    <div class="build-step-icon">&#127813;</div>
+                    <h3>Load Toppings</h3>
+                    <div class="build-options">
+                        <span class="build-tag">Avocado</span>
+                        <span class="build-tag">Edamame</span>
+                        <span class="build-tag">Corn</span>
+                        <span class="build-tag">Chickpeas</span>
+                        <span class="build-tag">Tomatoes</span>
+                        <span class="build-tag">+ 15 more</span>
+                    </div>
+                </div>
+                <div class="build-step-arrow reveal" aria-hidden="true">&#8594;</div>
+                <div class="build-step reveal stagger-4">
+                    <div class="build-step-num">04</div>
+                    <div class="build-step-icon">&#129472;</div>
+                    <h3>Drizzle Dressing</h3>
+                    <div class="build-options">
+                        <span class="build-tag">Chipotle Ranch</span>
+                        <span class="build-tag">Citrus Vinaigrette</span>
+                        <span class="build-tag">Avocado Lime</span>
+                        <span class="build-tag">Thai Peanut</span>
+                        <span class="build-tag">Balsamic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. MACRO BREAKDOWN -->
+    <section class="macros-section" id="macros">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#128200; Know Your Macros</span>
+                <h2 class="section-heading">Every Calorie Counts.</h2>
+                <p class="section-sub">We break down the macros so you don't have to. Fuel your body with precision — whether you're cutting, bulking, or maintaining.</p>
+            </div>
+            <div class="macros-grid">
+                <div class="macro-card reveal stagger-1">
+                    <div class="macro-card-header">
+                        <h3>Southwest Chop</h3>
+                        <span class="macro-cal">520 cal</span>
+                    </div>
+                    <div class="macro-bars">
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Protein</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill protein" style="width: 75%"></div></div>
+                            <span class="macro-bar-value">42g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Carbs</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill carbs" style="width: 45%"></div></div>
+                            <span class="macro-bar-value">38g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Fat</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill fat" style="width: 30%"></div></div>
+                            <span class="macro-bar-value">18g</span>
+                        </div>
+                    </div>
+                    <span class="macro-tag">High Protein</span>
+                </div>
+                <div class="macro-card reveal stagger-2">
+                    <div class="macro-card-header">
+                        <h3>Steak & Quinoa Bowl</h3>
+                        <span class="macro-cal">640 cal</span>
+                    </div>
+                    <div class="macro-bars">
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Protein</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill protein" style="width: 85%"></div></div>
+                            <span class="macro-bar-value">48g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Carbs</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill carbs" style="width: 55%"></div></div>
+                            <span class="macro-bar-value">52g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Fat</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill fat" style="width: 28%"></div></div>
+                            <span class="macro-bar-value">16g</span>
+                        </div>
+                    </div>
+                    <span class="macro-tag">Post-Workout</span>
+                </div>
+                <div class="macro-card reveal stagger-3">
+                    <div class="macro-card-header">
+                        <h3>Acai Power Bowl</h3>
+                        <span class="macro-cal">380 cal</span>
+                    </div>
+                    <div class="macro-bars">
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Protein</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill protein" style="width: 18%"></div></div>
+                            <span class="macro-bar-value">8g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Carbs</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill carbs" style="width: 65%"></div></div>
+                            <span class="macro-bar-value">58g</span>
+                        </div>
+                        <div class="macro-bar">
+                            <span class="macro-bar-label">Fat</span>
+                            <div class="macro-bar-track"><div class="macro-bar-fill fat" style="width: 22%"></div></div>
+                            <span class="macro-bar-value">12g</span>
+                        </div>
+                    </div>
+                    <span class="macro-tag">Pre-Workout</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRE/POST WORKOUT MEAL RECOMMENDATIONS -->
+    <section class="fuel-section" id="fuel">
+        <div class="container">
+            <div class="fuel-grid">
+                <div class="fuel-content reveal-left">
+                    <span class="section-tag">&#9889; Fuel Up</span>
+                    <h2>Eat With<br>Purpose.</h2>
+                    <p>Whether you're about to crush a workout or recover from one, what you eat matters. CHOP'D meals are designed to work as hard as you do — real ingredients, balanced macros, zero compromise on flavor.</p>
+                </div>
+                <div class="fuel-cards reveal-right">
+                    <div class="fuel-card fuel-pre">
+                        <div class="fuel-card-label">Pre-Workout</div>
+                        <h3>Need Energy? Go Carbs + Light Protein</h3>
+                        <div class="fuel-card-items">
+                            <span>&#127834; Acai Power Bowl — Complex carbs for sustained energy</span>
+                            <span>&#127867; Tropical Mango Smoothie — Quick fuel, easy on the stomach</span>
+                            <span>&#127813; Quinoa Chicken Bowl — Balanced energy + protein</span>
+                        </div>
+                        <span class="fuel-tip">&#128161; Tip: Eat 60-90 min before your workout for optimal fuel</span>
+                    </div>
+                    <div class="fuel-card fuel-post">
+                        <div class="fuel-card-label">Post-Workout</div>
+                        <h3>Recovery Mode? Go Protein + Complex Carbs</h3>
+                        <div class="fuel-card-items">
+                            <span>&#127828; Steak & Quinoa Bowl — 48g protein for muscle repair</span>
+                            <span>&#127813; Southwest Chop — High protein, bold flavor, fast recovery</span>
+                            <span>&#127867; Protein Power Smoothie — 30g protein, grab and go</span>
+                        </div>
+                        <span class="fuel-tip">&#128161; Tip: Get protein in within 30 minutes of your workout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. NUTRITION FACTS VISUAL -->
+    <section class="nutrition-section" id="nutrition">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#128202; Nutrition Facts</span>
+                <h2 class="section-heading">See What's In<br>Your Food.</h2>
+                <p class="section-sub">Transparency is non-negotiable. Here's exactly what goes into our most popular meals.</p>
+            </div>
+            <div class="nutrition-showcase reveal">
+                <div class="nutrition-panel">
+                    <div class="nutrition-panel-header">
+                        <h3>Southwest Chop</h3>
+                        <span>Serving Size: 1 bowl</span>
+                    </div>
+                    <div class="nutrition-panel-body">
+                        <div class="nutrition-line nutrition-bold">
+                            <span>Calories</span><span>520</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Total Fat</span><span>18g</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Saturated Fat</span><span>4g</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Cholesterol</span><span>85mg</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Sodium</span><span>680mg</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Total Carbohydrate</span><span>38g</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Dietary Fiber</span><span>8g</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Total Sugars</span><span>6g</span>
+                        </div>
+                        <div class="nutrition-line nutrition-bold nutrition-protein">
+                            <span>Protein</span><span>42g</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Vitamin A</span><span>35%</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Vitamin C</span><span>45%</span>
+                        </div>
+                        <div class="nutrition-line">
+                            <span>Iron</span><span>25%</span>
                         </div>
                     </div>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"The acai bowls here are the best I have had in the area. Super thick, tons of toppings, and the granola is crunchy and delicious. My kids love the smoothies too. A healthy spot the whole family can agree on."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>Amanda R., La Mirada</span>
-                        </div>
+                <div class="nutrition-highlights">
+                    <div class="nutrition-highlight">
+                        <div class="nutrition-highlight-num">42g</div>
+                        <div class="nutrition-highlight-label">Protein</div>
+                        <div class="nutrition-highlight-bar"></div>
+                    </div>
+                    <div class="nutrition-highlight">
+                        <div class="nutrition-highlight-num">8g</div>
+                        <div class="nutrition-highlight-label">Fiber</div>
+                        <div class="nutrition-highlight-bar"></div>
+                    </div>
+                    <div class="nutrition-highlight">
+                        <div class="nutrition-highlight-num">520</div>
+                        <div class="nutrition-highlight-label">Calories</div>
+                        <div class="nutrition-highlight-bar"></div>
+                    </div>
+                    <div class="nutrition-highlight">
+                        <div class="nutrition-highlight-num">0g</div>
+                        <div class="nutrition-highlight-label">Added Sugar</div>
+                        <div class="nutrition-highlight-bar"></div>
                     </div>
                 </div>
-                <div class="review-card">
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ATHLETE APPROVED TESTIMONIALS -->
+    <section class="athletes-section" id="athletes">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&#127942; Athlete Approved</span>
+                <h2 class="section-heading">Real People.<br>Real Results.</h2>
+                <p class="section-sub">See why fitness-focused La Mirada keeps coming back to CHOP'D.</p>
+            </div>
+            <div class="athletes-grid">
+                <div class="athlete-card reveal stagger-1">
+                    <div class="athlete-badge">&#127947; Gym Regular</div>
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"I eat here 3 times a week. The protein bowls keep me fueled through long work days. The steak bowl with quinoa is phenomenal. Fast, fresh, and the staff is always super friendly."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">V</div>
-                        <div>
-                            <strong>Verified Customer Review</strong>
-                            <span>Jason M., Whittier</span>
-                        </div>
+                    <p class="review-text">"Finally a salad place that actually fills you up! The portions are huge and the flavors are amazing. The Southwest Chop is my go-to. 42g of protein and it tastes incredible."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Yelp Verified</span>
+                        <span class="review-source">5-Star Review</span>
                     </div>
                 </div>
-                <div class="review-card">
+                <div class="athlete-card reveal stagger-2">
+                    <div class="athlete-badge">&#127939; Runner</div>
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"I love that I can build my own salad with exactly what I want. The ingredients are always fresh and the dressing selection is great. The chipotle ranch is a must-try. Way better than chain salad places."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>Rachel K., Buena Park</span>
-                        </div>
+                    <p class="review-text">"I eat here 3 times a week. The protein bowls keep me fueled through long work days and training. The steak bowl with quinoa is phenomenal. Fast, fresh, and the staff is always super friendly."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Jason M., Whittier</span>
+                        <span class="review-source">Verified Customer</span>
                     </div>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Ordered catering for our office lunch and everyone was impressed. The salad bar setup was beautiful and the wraps were a hit. Professional delivery and great value. CHOP'D is now our go-to for team lunches."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">V</div>
-                        <div>
-                            <strong>Verified Customer Review</strong>
-                            <span>Tony S., La Mirada</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
+                <div class="athlete-card reveal stagger-3">
+                    <div class="athlete-badge">&#128170; CrossFit</div>
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p class="review-text">"The wraps are so good I forgot I was eating healthy. The falafel pita is incredible with the tzatziki sauce. Fresh, flavorful, and filling. This place has ruined other salad spots for me."</p>
-                    <div class="review-author">
-                        <div class="review-avatar">Y</div>
-                        <div>
-                            <strong>Yelp Verified Review</strong>
-                            <span>Megan L., Norwalk</span>
-                        </div>
+                    <div class="review-footer">
+                        <span class="review-author">Megan L., Norwalk</span>
+                        <span class="review-source">Yelp</span>
                     </div>
                 </div>
-            </div>
-            <div class="reviews-cta">
-                <p>Join the fresh food revolution. Taste the CHOP'D difference today.</p>
-                <a href="tel:5624480038" class="btn btn-primary">Call (562) 448-0038</a>
+                <div class="athlete-card reveal stagger-4">
+                    <div class="athlete-badge">&#129336; Yogi</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"The acai bowls are the best I've had. Super thick, tons of toppings, and the granola is crunchy and delicious. My kids love the smoothies too. Healthy spot the whole family can agree on."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Amanda R., La Mirada</span>
+                        <span class="review-source">Yelp</span>
+                    </div>
+                </div>
+                <div class="athlete-card reveal stagger-5">
+                    <div class="athlete-badge">&#127947; Bodybuilder</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"I love that I can build my own salad with exactly what I want. The ingredients are always fresh and the dressing selection is great. The chipotle ranch is a must-try."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Rachel K., Buena Park</span>
+                        <span class="review-source">Yelp</span>
+                    </div>
+                </div>
+                <div class="athlete-card reveal stagger-6">
+                    <div class="athlete-badge">&#127970; Office Athlete</div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Ordered catering for our office lunch and everyone was impressed. The salad bar setup was beautiful and the wraps were a hit. CHOP'D is now our go-to for team lunches."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Tony S., La Mirada</span>
+                        <span class="review-source">Verified Customer</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- 8. ABOUT -->
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">About CHOP'D</span>
-                    <h2>La Mirada's Fresh Food<br>Destination Since Day One</h2>
+                <div class="about-content reveal-left">
+                    <span class="section-tag">&#9889; About CHOP'D</span>
+                    <h2>La Mirada's Fresh Food<br>Destination Since Day One.</h2>
                     <p>CHOP'D was born from a simple idea: healthy food should taste incredible, fill you up, and not cost a fortune. We got tired of overpriced salads with skimpy portions and bland flavors, so we built the salad shop we always wished existed.</p>
                     <p>Every salad is chopped fresh when you order. Every bowl is built with care. Every smoothie is blended with real fruit. We believe that eating well should never feel like a compromise, and one bite of our food proves it.</p>
-                    <p>Whether you are a salad aficionado, a protein bowl enthusiast, or just someone who wants a fresh meal that actually tastes good, CHOP'D is your spot. Come see why La Mirada keeps coming back.</p>
                     <div class="trust-badges">
                         <span class="trust-badge">Fresh Chopped</span>
                         <span class="trust-badge">House Dressings</span>
                         <span class="trust-badge">Made To Order</span>
+                        <span class="trust-badge">Macro-Friendly</span>
                     </div>
                 </div>
-                <div class="about-details">
+                <div class="about-details reveal-right">
                     <div class="detail-card">
                         <h4>Chopped Fresh Daily</h4>
                         <p>Our ingredients are prepped fresh every single morning. No pre-chopped bags, no sitting around. When you order, we chop, assemble, and serve. Peak freshness, every time.</p>
@@ -352,47 +522,47 @@
         </div>
     </section>
 
-    <section class="cta-section" id="cta-section">
+    <!-- 9. CTA -->
+    <section class="cta-section" id="cta">
         <div class="container">
-            <div class="cta-content">
-                <h2>Hungry For Something Fresh?<br>Your Next Meal Is Waiting.</h2>
-                <p>Stop settling for boring food. Call us or stop by for the freshest, boldest chopped salads and bowls in La Mirada. Your taste buds will thank you.</p>
-                <div class="cta-buttons">
-                    <a href="tel:5624480038" class="btn btn-primary btn-lg btn-pulse">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        Order Now: (562) 448-0038
-                    </a>
-                    <a href="#contact" class="btn btn-secondary btn-lg btn-pulse">View Full Menu</a>
-                </div>
-                <p class="cta-note">First order gets a <strong>FREE upgrade to large</strong>!</p>
+            <h2 class="reveal">Ready to Fuel Up?</h2>
+            <p class="reveal stagger-1">Stop settling for boring food. Your next power meal is a phone call away.</p>
+            <div class="cta-actions reveal stagger-2">
+                <a href="tel:5624480038" class="btn btn-neon btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Order Now: (562) 448-0038
+                </a>
+                <a href="#contact" class="btn btn-ghost btn-lg">View Full Menu</a>
             </div>
+            <p class="cta-note reveal stagger-3">First order gets a <strong>FREE upgrade to large</strong>!</p>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- 10. CONTACT -->
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2>Order Your Fresh Meal</h2>
-                    <p>Call ahead for faster pickup, dine in with us, or order catering for your next event. Fresh food is just a call or click away.</p>
+                <div class="contact-info reveal-left">
+                    <span class="section-tag">&#9889; Get In Touch</span>
+                    <h2>Order Your<br>Power Meal</h2>
+                    <p>Call ahead for faster pickup, dine in with us, or order catering for your next event. Fresh food is just a call away.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <div class="contact-item-icon">&#128222;</div>
                             <div>
                                 <strong>Phone</strong>
                                 <a href="tel:5624480038">(562) 448-0038</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div class="contact-item-icon">&#128205;</div>
                             <div>
                                 <strong>Address</strong>
                                 <span>12754 La Mirada Blvd<br>La Mirada, CA 90638</span>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <div class="contact-item-icon">&#128336;</div>
                             <div>
                                 <strong>Hours</strong>
                                 <span>Mon-Sat: 10:30 AM - 9:00 PM<br>Sun: 11:00 AM - 8:00 PM</span>
@@ -400,9 +570,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper reveal-right">
+                    <h3>Place an Order</h3>
                     <form class="contact-form" id="contactForm">
-                        <h3>Place an Order</h3>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
@@ -414,75 +584,65 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="alex@email.com">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="orderType">Order Type</label>
-                                <select id="orderType" name="orderType">
-                                    <option value="">Select type...</option>
-                                    <option value="dine-in">Dine-In</option>
-                                    <option value="takeout">Takeout</option>
-                                    <option value="catering">Catering</option>
-                                    <option value="delivery">Delivery</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="partySize">Party Size</label>
-                                <input type="text" id="partySize" name="partySize" placeholder="e.g. 1, 4, 10+...">
-                            </div>
+                            <label for="orderType">Order Type</label>
+                            <select id="orderType" name="orderType">
+                                <option value="">Select type...</option>
+                                <option value="dine-in">Dine-In</option>
+                                <option value="takeout">Takeout</option>
+                                <option value="catering">Catering</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Order Details</label>
                             <textarea id="message" name="message" rows="3" placeholder="What would you like to order?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Submit Order</button>
-                        <p class="form-note">We will confirm your order within 10 minutes.</p>
+                        <button type="submit" class="btn btn-neon btn-full">Submit Order</button>
+                        <p class="form-note">We'll confirm your order within 10 minutes.</p>
                     </form>
+                    <div class="form-success" id="formSuccess">
+                        <h4>Order Received! &#9889;</h4>
+                        <p>We'll confirm your order shortly.</p>
+                    </div>
                 </div>
             </div>
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5!2d-118.0120!3d33.9170!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d08e8e8e8e8%3A0x123456789!2s12754+La+Mirada+Blvd%2C+La+Mirada%2C+CA+90638!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="350" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-wrapper reveal">
+                <iframe src="https://maps.google.com/maps?q=12754+La+Mirada+Blvd+La+Mirada+CA+90638&output=embed" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" title="CHOP'D Location"></iframe>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-icon">CH</span>
-                        <div class="logo-text">
-                            <span class="logo-name">CHOP'D</span>
-                            <span class="logo-tagline">Fresh Chopped Salads & Bowls</span>
-                        </div>
-                    </div>
+                    <span class="logo-mark">CH</span>
+                    <span class="logo-name">CHOP'D</span>
                     <p>La Mirada's destination for fresh chopped salads, protein bowls, wraps, and smoothies. Eat fresh, feel amazing.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#why-us">Why Us</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#build-your-bowl">Build Your Bowl</a></li>
+                        <li><a href="#macros">Macros</a></li>
+                        <li><a href="#fuel">Fuel Up</a></li>
+                        <li><a href="#athletes">Reviews</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Menu Items</h4>
+                    <h4>Menu</h4>
                     <ul>
-                        <li><a href="#menu">Chopped Salads</a></li>
-                        <li><a href="#menu">Protein Bowls</a></li>
-                        <li><a href="#menu">Wraps & Pitas</a></li>
-                        <li><a href="#menu">Acai Bowls</a></li>
-                        <li><a href="#menu">Smoothies</a></li>
+                        <li><a href="#build-your-bowl">Chopped Salads</a></li>
+                        <li><a href="#macros">Protein Bowls</a></li>
+                        <li><a href="#fuel">Wraps & Pitas</a></li>
+                        <li><a href="#fuel">Acai Bowls</a></li>
+                        <li><a href="#fuel">Smoothies</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>Contact</h4>
                     <p><a href="tel:5624480038">(562) 448-0038</a></p>
                     <p>12754 La Mirada Blvd<br>La Mirada, CA 90638</p>
                     <p>Mon-Sat: 10:30AM - 9PM</p>
@@ -494,14 +654,16 @@
         </div>
     </footer>
 
+    <!-- Mobile CTA -->
     <div class="mobile-cta" id="mobileCta">
-        <a href="tel:5624480038" class="btn btn-primary btn-full">
+        <a href="tel:5624480038" class="btn btn-neon btn-full">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             Order Now: (562) 448-0038
         </a>
     </div>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 
     <script src="script.js"></script>
 </body>
